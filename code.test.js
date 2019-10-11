@@ -1,11 +1,11 @@
 QUnit.module('Main', {})
 
 QUnit.test( "Test calcCG", function( assert ) {
-    assert.equal(testcalc(120000, 4000), 30, "Aircraft moment 120,000 / aircraft weight 4,000 gives a CG of 30");
-    assert.equal(testcalc(100000, 5000), 20, "Aircraft moment 100,000 / aircraft weight 5,000 gives a CG of 20");
-    assert.equal(testcalc(140000, 7000), 20, "Aircraft moment 140,000 / aircraft weight 7,000 gives a CG of 20");
-    assert.equal(testcalc(200000, 4000), 50, "Aircraft moment 200,000 / aircraft weight 4,000 gives a CG of 50");
-    assert.equal(testcalc(160000, 4000), 40, "Aircraft moment 160,000 / aircraft weight 4,000 gives a CG of 40");
+    assert.equal(testcalc(5,2);
+    assert.equal(testcalc(9,-4);
+    assert.equal(testcalc(8,0);
+    assert.equal(testcalc(8,2);
+    assert.equal(testcalc(5,8);
 });
 
 window.addEventListener('load', () => {
