@@ -27,17 +27,46 @@
          </li>
         </ul>
         </form>
-    </div>
-    </nav>
-    <div class="container">  
-        <form id="contact" action="" method="post">
-          <h3>Computing the Square of a Number</h3>
-          <fieldset>
-            <input placeholder="Enter a number" type="text" tabindex="1" required>
+      </nav>
+        <div class="col-md-5">
+
+          <h2>Given peoplePerCar and number of cars, display the total number of people</h2>
+          <hr>
+  
+          <fieldset class="mt-4">
+            <label for="peoplePerCar">peoplePerCar:</label>
+            <input id="peoplePerCar" type="number" min="1" max="100" value=10>
+            <span id="firstWarning" class="text-danger"></span>
           </fieldset>
-          <fieldset>
-            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+  
+          <fieldset class="mt-4">
+            <label for="cars">cars:</label>
+            <input id="cars" type="number" min="1" max="100" value="20">
+            <span id="secondWarning" class="text-danger"></span>
           </fieldset>
-        </form>
-    </div>
+        </div>
+        <!--end column 1-->
+  
+        <!--column 2 (5/12) -->
+        <div class="col-md-5 mb-4">
+          <h2>Displaying Total Number of People:</h2>
+          <hr>
+          <button id="addButton" class="btn btn-primary">Calculate Total Number of People</button>
+          <hr>
+          <p id="result"> Total Number of People=200 </p>
+  
+        </div>
+        <!-- end column 2-->
+  
+      </div>
+      <!-- end row 1 -->
+  
+    </main>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.7/js/mdb.min.js"></script>
+    <script src="compute.js"></script>
+  
     </body>

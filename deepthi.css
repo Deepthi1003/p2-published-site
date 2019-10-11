@@ -10,14 +10,22 @@ body {
     width: 100%;
     background-color: rgb(166, 173, 204);
   }
+
+  .img{
+    width: 100%;
+    background-color: rgb(166, 173, 204);
+  }
   
   section {
     margin: 1rem;
     padding: 2rem;
-    background-color: rgb(20, 27, 230);
+    background-color: rgb(141, 144, 241);
     border-radius: 2em;
   }
   
+  div {
+    background-color: rgb(166, 173, 204);
+  }
   .bgimg {
     background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
     height: 100%;
