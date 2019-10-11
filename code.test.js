@@ -12,7 +12,7 @@ QUnit.config.autostart = false  // sync = false; start after loading html
 
 window.addEventListener('load', () => {
   const appURL = '../index.html'
-  const openingTag = '<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">'
+  const openingTag = '<body class="bgimg">'
   const closingTag = '</body>'
   fetch(appURL, { method: 'GET' })
     .then(response => {
