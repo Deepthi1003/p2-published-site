@@ -2,8 +2,10 @@ QUnit.module('MAIN MODULE', {})  // group all these tests together
 
 QUnit.test('TEST add', assert => {
   assert.equal(numbpeople(1, 1), 1, 'Positive integers')
-  assert.equal(numbpeople(-1, -1), 2, 'Positive integers')
-  assert.equal(numbpeople(10, 10), 100, 'valuess')
+  assert.equal(numbpeople(6, 8), 48, 'Positive integers')
+  assert.equal(numbpeople(10, 10), 100, 'Positive Integers')
+  assert.equal(numbpeople(8, 6), 48, 'Positive integers')
+  assert.equal(numbpeople(10, 11), 110, 'Positive Integers')
 })
 
 QUnit.config.autostart = false  // sync = false; start after loading html
@@ -32,7 +34,7 @@ window.addEventListener('load', () => {
 })
 
 QUnit.test("TEST first number validation", assert => {
-  const input = document.querySelector('#firstNumber')
+  const input = document.querySelector('#peoplePerCar')
   const warning = document.querySelector('#firstWarning')
   input.value = -3;
   assert.equal(input.value, -3, "Bad value assigned")
