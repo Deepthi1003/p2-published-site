@@ -19,12 +19,15 @@ const Numbpeople = async (event) => {
     const j = parseInt(document.querySelector('#cars').value)
     const ans = ` Number of people is ${numbpeople(i, j)}.`
     document.querySelector('#result').innerHTML = ans
+    localStorage.setItem('Variable1',i);
+    localStorage.setItem('Variable2',j);
   }
 }
 
 
 // delegate to dynamic elements (e.g. when testing)
 // focusout is like blur, but it bubbles up
+
 
 document.addEventListener('focusout', event => {
   if ((event.target && event.target.id === 'peoplePerCar') ||
