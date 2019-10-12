@@ -5,7 +5,7 @@
     crossorigin="anonymous">
 
     <link rel="stylesheet" href="./deepthi.css"/>
-    <title>Computing the Square of a number</title>
+    <title>Computing total Number of people</title>
 </head>
 <body class="bgimg">
     <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
@@ -63,7 +63,24 @@
   
       </div>
       <!-- end row 1 -->
-  
+        <div id="demo">
+          <h3>AJAX</h3>
+          <button type="button" onclick="loadDoc()">Change Content</button>
+          </div>
+          
+          <script>
+          function loadDoc() {
+            var xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function() {
+              if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML =
+                this.responseText;
+              }
+            };
+            xhttp.open("GET", "ajax.txt", true);
+            xhttp.send();
+          }
+          </script>
     </main>
   
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
