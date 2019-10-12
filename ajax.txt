@@ -1,1 +1,1 @@
-here's what I get after clicking on that button
+Here's what I get after clicking on the ajax button.
